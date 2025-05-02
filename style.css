@@ -1,9 +1,12 @@
+html{
+    scroll-behavior:smooth; /* Smooth scrolling */
+    scroll-padding-top: 100px; /* Space for fixed header */
+}
 body { 
     font-family: 'Poppins', sans-serif;
     margin: 0;
     height: 100%;
     overflow-x: hidden; /* Allow scrolling vertically, but prevent horizontal overflow */
-    scroll-behavior:smooth; /* Smooth scrolling */
   } 
 
   .text-accent { color: #CCFF66; }
