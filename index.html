@@ -1,0 +1,512 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3Aru Labs </title>
+  <meta name="description" content="3Aru Labs - Empowering blockchain projects with investor access, exchange listings, and strategic growth."/>
+  <meta name="keywords" content="3Aru Labs, blockchain, crypto, investor access, exchange listings, strategic growth, liquidity solutions, business development"/>
+  <meta name="author" content="3Aru Labs"/>
+  <link rel="icon" href="./images/Icon 01.png" type="image/png" sizes="16x16">
+  <!-- Poppins font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="text-white">
+
+<!-- NAVBAR -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-[#341da2]/30 backdrop-blur-md px-5 py-4">
+  <div class="flex items-center justify-between max-w-7xl mx-auto">
+    <!-- Logo -->
+    <a href="index.html" class="text-2xl font-bold text-accent">
+      <img src="./images/Wide 01.png" alt="logo" class="w-24">
+    </a>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex space-x-6 font-bold text-white">
+      <li><a href="#" class="hover:text-[#ccffcc] transition">Home</a></li>
+      <li><a href="#about" class="hover:text-[#ccffcc] transition">About</a></li>
+      <li><a href="#Services" class="hover:text-[#ccffcc] transition">Services</a></li>
+      <li><a href="#Contact" class="hover:text-[#ccffcc] transition">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Mobile Menu Dropdown (Stacked View) -->
+  <div id="mobile-menu" class="md:hidden hidden absolute top-full left-0 w-full z-40 flex-col space-y-4 bg-[#341da2]/90 px-6 py-4 text-white font-bold transition-all duration-300">
+  <ul class="flex flex-col space-y-4">
+    <li><a href="#" class="hover:text-[#ccffcc] transition">Home</a></li>
+    <li><a href="#about" class="hover:text-[#ccffcc] transition">About</a></li>
+    <li><a href="#Services" class="hover:text-[#ccffcc] transition">Services</a></li>
+    <li><a href="#Contact" class="hover:text-[#ccffcc] transition">Contact</a></li>
+  </ul>
+  </div>
+</nav>
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+  
+
+  <!-- HERO -->
+  <section class="relative min-h-[75vh] flex justify-center items-center px-6 text-center background-container overflow-hidden pt-24">
+    <!-- Background image -->
+    <img src="images/PowerClip Rectangle.png" alt="Background" class="background-img">
+  
+    <!-- Floating images -->
+    <img src="images/Bitmap (2).png" class="floating-img img1" />
+    <img src="images/Bitmap (3).png" class="floating-img img2" />
+    <img src="images/Bitmap (3).png" class="floating-img img3" />
+    <img src="images/Bitmap (3).png" class="floating-img img4" />
+    <img src="images/Bitmap (2).png" class="floating-img img5" />
+  
+    <!-- Text Content -->
+    <div class="relative z-10 max-w-3xl text-white">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4">
+        Powering Blockchain with Liquidity and Capital 
+      </h1>
+      <p class="text-base sm:text-lg md:text-xl mb-8">
+        We connect Web3 innovators with capital, liquidity, and strategic market exposure for sustainable growth.
+      </p>
+      <a href="#contact" class="border border-[#CCFF66] text-[#FFF] px-8 py-3 rounded-lg font-semibold backdrop-blur-md bg-[#341da2]/10 hover:bg-[#341da2]/20 transition">Join Now</a>
+    </div>    
+  </section>
+  
+
+  <!-- CORE SOLUTIONS -->
+    
+    <section class="relative  py-20  overflow-hidden bg-[#CCFFCC]/60 backdrop-blur-md border border-white/30 rounded-2xl p-10 shadow-xl  text-left text-white">
+    <!-- Decorative Side PNGs (Static) -->
+    <img src="images/Icon 01.png" class="absolute top-10 left-5 w-90 opacity-60 z-0" />
+    <img src="images/Bitmap (3).png" class="absolute bottom-16 right-16 w-24 opacity-60 z-0" />
+    <img src="images/Icon 02.png" class="absolute top-1/2 left-1/4 w-94 opacity-60 z-0" />
+  
+    <!-- Content Layer -->
+    <div class="relative z-10 max-w-6xl mx-auto text-left px-6 sm:text-center">
+      <h2 class="text-3xl font-bold mb-8 text-[#341da2] text-center">Our Core Solutions</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Private Funding -->
+        <div class="p-6 bg-white/10 border border-white/30 backdrop-blur-md rounded-xl shadow-lg text-black">
+          <h3 class="text-2xl font-semibold mb-2 text-[#341da2]">Private Funding</h3>
+          <p class="mb-2">Fast-track your capital raise through our OTC investor network.</p>
+          <p >
+            We connect early-stage blockchain startups with private investors who understand the space. Our tailored pitch support and strategic introductions maximize the chance of a successful round.
+          </p>
+        </div>
+  
+        <!-- Liquidity Provision -->
+        <div class="p-6 bg-white/10 border border-white/30 backdrop-blur-md rounded-xl shadow-lg text-black">
+          <h3 class="text-2xl font-semibold mb-2 text-[#341da2]">Liquidity Provision</h3>
+          <p class="mb-2">Tailored liquidity solutions to stabilize your token market.</p>
+          <p >
+            Our in-house market makers help reduce slippage and increase trading volume by providing deep order books and stability — essential for token credibility and user trust.
+          </p>
+        </div>
+  
+        <!-- Strategic Partnerships -->
+        <div class="p-6 bg-white/10 border border-white/30 backdrop-blur-md rounded-xl shadow-lg text-black ">
+          <h3 class="text-2xl font-semibold mb-2 text-[#341da2]">Strategic Partnerships</h3>
+          <p class="mb-2">Forge alliances with exchanges, market makers, and influencers.</p>
+          <p >
+            We identify and broker high-impact partnerships with key Web3 players — from centralized exchanges and KOLs to legal advisors and tech integrators — that drive adoption and market presence.
+          </p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="about" class="min-h-screen flex flex-col justify-center p-10 text-left bg-cover bg-center" style="background-image: url('images/PowerClip\ Rectangle\ \(1\).png'); background-attachment: fixed;">
+  
+  <div class="relative md:w-3/5 space-y-6 text-white p-10 bg-[#341da2]/10 backdrop-blur-md border border-[#341da2]/30 rounded-2xl shadow-xl max-w-5xl text-left mt-10">
+        <!-- Background image positioned in the top-right -->
+        <div class="absolute top-0 right-0 w-32 h-32 bg-no-repeat bg-contain bg-right-top opacity-90 pointer-events-none"  style="background-image: url('./images/Bitmap\ \(2\).png');">
+       </div>
+    <h1 class="text-5xl font-extrabold text-[#CCFF66]">About Us</h1>
+
+    <p >
+      3Aru Labs is a business development powerhouse specializing in connecting blockchain projects with investors, forging high-value partnerships, and providing liquidity solutions. We accelerate growth through strategic fundraising, market-making, and exchange listings, ensuring projects secure the capital and industry positioning needed for long-term success.   
+    </p>
+  </div>
+
+  <!-- Purpose, Vision, Mission Glass Divs -->
+  <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl">
+    <div class="bg-[#341da2]/10 backdrop-blur-md border border-white/30 rounded-2xl p-6 text-white shadow-lg">
+      <div class="flex items-center mb-4">
+        <img src="./images/Group of 17 Objects.png" alt="" class="w-10">
+        <h2 class="text-2xl font-bold text-[#CCFF66] mb-2 px-3">Purpose </h2>  
+      </div>
+      <p>
+        To connect blockchain projects to investors, market makers, and liquidity providers to help them gain access to funding, liquidity, and market exposure.
+      </p>
+    </div>
+    <div class="bg-[#341da2]/10 backdrop-blur-md border border-white/30 rounded-2xl p-6 text-white shadow-lg">
+      <div class="flex items-center mb-4">
+        <img src="./images/Group of 6 Objects.png" alt="" class="w-10">
+        <h2 class="px-3 text-2xl font-bold text-[#CCFF66] mb-2">Vision</h2>
+      </div>
+      <p>
+        To become the go-to accelerator for blockchain projects worldwide, recognized for transforming potential into performance.
+      </p>
+    </div>
+    <div class="bg-[#341da2]/10 backdrop-blur-md border border-white/30 rounded-2xl p-6 text-white shadow-lg">
+      <div class="flex items-center mb-4">
+        <img src="./images/Group of 5 Objects.png" alt="" class="w-10">
+        <h2 class="px-3 text-2xl font-bold text-[#CCFF66] mb-2">Mission</h2>
+      </div>
+      <p>
+        To empower blockchain ventures through access to capital, strategic partnerships, and a foundation for long-term success.
+      </p>
+    </div>
+  </div>
+</section>
+<div class="values">
+  <img src="./images/values.png" alt="">
+</div>
+
+
+
+<section id="services" class="min-h-screen py-20 px-6 text-white bg-cover bg-center" 
+style="background-image: url('images/PowerClip\ Rectangle\ \(1\).png'); background-attachment: fixed;">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-4xl font-extrabold text-center mb-12 text-[#CCFF66]">Our Services</h2>
+
+    <!-- Responsive flex layout: stack on mobile, row on large screens -->
+    <div class="flex flex-col lg:flex-row gap-8">
+      
+      <!-- Left Column: Stack 2 cards vertically -->
+      <div class="w-full lg:w-[70%] flex flex-col gap-8">
+        <!-- OTC Investment Deals -->
+        <div class="bg-white/5 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-white/10">
+          <h3 class="text-2xl font-bold text-[#CCFF66] mb-2">OTC Investment Deals</h3>
+          <p class="text-sm mb-3">
+            We facilitate direct investment deals between crypto projects and high-net-worth investors.
+          </p>
+          <p class="text-sm font-semibold mb-1">What We Offer:</p>
+          <ul class="text-sm list-disc list-inside mb-3">
+            <li>Private funding rounds</li>
+            <li>Compliant OTC transactions</li>
+            <li>Tailored deal structuring</li>
+          </ul>
+          <p class="text-sm font-semibold mb-1">Key Benefits:</p>
+          <ul class="text-sm space-y-1">
+            <li>✔ Fast-track access to capital</li>
+            <li>✔ Private & flexible agreements</li>
+            <li>✔ Strong investor relations</li>
+          </ul>
+        </div>
+
+        <!-- Partnership Development -->
+        <div class="bg-white/5 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-white/10">
+          <h3 class="text-2xl font-bold text-[#CCFF66] mb-2">Partnership Development</h3>
+          <p class="text-sm mb-3">
+            We connect projects with industry players to foster strategic growth.
+          </p>
+          <p class="text-sm font-semibold mb-1">What We Offer:</p>
+          <ul class="text-sm list-disc list-inside mb-3">
+            <li>Business matchmaking</li>
+            <li>Strategic deal structuring</li>
+            <li>Long-term growth planning</li>
+          </ul>
+          <p class="text-sm font-semibold mb-1">Key Benefits:</p>
+          <ul class="text-sm space-y-1">
+            <li>✔ Greater brand exposure</li>
+            <li>✔ Shared user bases</li>
+            <li>✔ Stronger market positioning</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Right Column: Single card spans height of both -->
+      <div class="w-full lg:w-[30%]">
+        <div class="h-full bg-white/5 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-white/10 ">
+          <div class="absolute bottom-0 right-0 md:left-10 w-20 h-20 md:w-96 md:h-96 bg-no-repeat bg-contain bg-right-top opacity-90 pointer-events-none"
+          style="background-image: url('./images/Group\ of\ 3\ Objects.png');">
+          </div>
+     
+     
+          <h3 class="text-2xl font-bold text-[#CCFF66] ">Exchange Listing Services</h3>
+          <p class="text-sm ">
+            We help projects get listed on top-tier centralized and decentralized exchanges.
+          </p>
+          <p class="text-sm font-semibold mb-1">What We Offer:</p>
+          <ul class="text-sm list-disc list-inside ">
+            <li>Exchange negotiations</li>
+            <li>Liquidity support</li>
+            <li>Trading strategy advisory</li>
+          </ul>
+          <p class="text-sm font-semibold ">Key Benefits:</p>
+          <ul class="text-sm space-y-1">
+            <li>✔ Faster approvals</li>
+            <li>✔ Wider token access</li>
+            <li>✔ Stronger market traction</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="Contact" class="min-h-screen bg-[#ccffcc]/10 flex flex-col justify-center items-center px-6 py-12">
+  <div class="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-8">
+    
+    <!-- Left Side with Images (Hidden on Mobile) -->
+    <div class="hidden md:flex flex-col justify-center items-start space-y-6 relative">
+      
+      <img src="./images/Group of 3 Objects.png" alt="Logo" class="w-90">
+    </div>
+
+    <!-- Contact Form -->
+    <div class="bg-white p-8 rounded-2xl shadow-xl w-ful mx-l">
+      <h2 class="text-3xl font-bold text-[#0A0B1B] mb-6">Get in Touch</h2>
+      <form action="send_email.php" method="POST" class="space-y-4">
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Your Name</label>
+          <input type="text" name="name" required class="w-full mt-1 p-2 rounded-md border text-[#0A0B1B] border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#0A0B1B]">
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Email Address</label>
+          <input type="email" name="email" required class="w-full mt-1 p-2 rounded-md text-[#0A0B1B] border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#0A0B1B]">
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Message</label>
+          <textarea name="message" rows="4" required class="w-full mt-1 p-2 rounded-md text-[#0A0B1B] border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#0A0B1B]"></textarea>
+        </div>
+        <button type="submit" class="bg-[#0A0B1B] text-white px-6 py-2 rounded-md hover:bg-[#1a1a2e] transition">
+          Send Message
+        </button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<section class="text-white p-10 text-left bg-cover bg-center"
+style="background-image: url('images/PowerClip\ Rectangle\ \(1\).png'); background-attachment: fixed;">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-4xl font-extrabold text-[#CCFF66] text-center mb-12">FAQs</h2>
+    <div class="space-y-4">
+
+      <!-- FAQ Item -->
+      <details class="bg-white/5 border border-white/10 rounded-xl p-4">
+        <summary class="cursor-pointer text-lg font-semibold text-[#CCFF66]">1. How long does it take to close an OTC deal?</summary>
+        <p class="mt-2 text-sm">Typically, OTC deals take between 24 to 48 hours, depending on the project’s investment readiness, investor interest, and deal complexity.</p>
+      </details>
+
+      <details class="bg-white/5 border border-white/10 rounded-xl p-4">
+        <summary class="cursor-pointer text-lg font-semibold text-[#CCFF66]">2. What are the key factors for securing an exchange listing?</summary>
+        <ul class="mt-2 text-sm list-disc list-inside space-y-1">
+          <li>Market demand and trading volume potential.</li>
+          <li>Token utility and project credibility.</li>
+          <li>Compliance with exchange requirements.</li>
+        </ul>
+      </details>
+
+      <details class="bg-white/5 border border-white/10 rounded-xl p-4">
+        <summary class="cursor-pointer text-lg font-semibold text-[#CCFF66]">3. How does 3Aru Labs ensure regulatory compliance?</summary>
+        <p class="mt-2 text-sm">We conduct KYC (Know Your Customer) and AML (Anti-Money Laundering) checks for all transactions, ensuring compliance with financial regulations.</p>
+      </details>
+
+      <details class="bg-white/5 border border-white/10 rounded-xl p-4">
+        <summary class="cursor-pointer text-lg font-semibold text-[#CCFF66]">4. What sets 3Aru Labs apart from other business development firms?</summary>
+        <ul class="mt-2 text-sm list-disc list-inside space-y-1">
+          <li>Strong investor network with direct access to high-value investors.</li>
+          <li>Hands-on business development tailored to each project.</li>
+          <li>Industry expertise with a track record of successful fundraising and partnerships.</li>
+        </ul>
+      </details>
+
+      <details class="bg-white/5 border border-white/10 rounded-xl p-4">
+        <summary class="cursor-pointer text-lg font-semibold text-[#CCFF66]">5. Does 3Aru Labs provide post-listing market support?</summary>
+        <ul class="mt-2 text-sm list-disc list-inside space-y-1">
+          <li>Market-making services to maintain liquidity.</li>
+          <li>Community management to engage traders.</li>
+          <li>Growth strategies to ensure long-term success.</li>
+        </ul>
+      </details>
+
+      <details class="bg-white/5 border border-white/10 rounded-xl p-4">
+        <summary class="cursor-pointer text-lg font-semibold text-[#CCFF66]">6. Can 3Aru Labs help with tokenomics and project advisory?</summary>
+        <ul class="mt-2 text-sm list-disc list-inside space-y-1">
+          <li>Tokenomics design and optimization.</li>
+          <li>Fundraising strategies.</li>
+          <li>Investor pitch preparation.</li>
+        </ul>
+      </details>
+
+      <details class="bg-white/5 border border-white/10 rounded-xl p-4">
+        <summary class="cursor-pointer text-lg font-semibold text-[#CCFF66]">7. What types of investors does 3Aru Labs work with?</summary>
+        <ul class="mt-2 text-sm list-disc list-inside space-y-1">
+          <li>Private crypto investors (whales).</li>
+          <li>Venture capital firms.</li>
+          <li>Institutional investors.</li>
+        </ul>
+      </details>
+
+      <details class="bg-white/5 border border-white/10 rounded-xl p-4">
+        <summary class="cursor-pointer text-lg font-semibold text-[#CCFF66]">8. Do you work with projects in all blockchain sectors?</summary>
+        <ul class="mt-2 text-sm list-disc list-inside space-y-1">
+          <li>DeFi, GameFi, and NFTs.</li>
+          <li>Layer-1 and Layer-2 solutions.</li>
+          <li>Infrastructure, AI, and Web3 innovations.</li>
+        </ul>
+      </details>
+
+      <details class="bg-white/5 border border-white/10 rounded-xl p-4">
+        <summary class="cursor-pointer text-lg font-semibold text-[#CCFF66]">9. How does 3Aru Labs charge for services?</summary>
+        <ul class="mt-2 text-sm list-disc list-inside space-y-1">
+          <li>Commission-based fees for successful deals.</li>
+          <li>Retainer-based services for long-term business development.</li>
+          <li>One-time service fees for exchange listings and other advisory services.</li>
+        </ul>
+      </details>
+
+      <details class="bg-white/5 border border-white/10 rounded-xl p-4">
+        <summary class="cursor-pointer text-lg font-semibold text-[#CCFF66]">10. How can we get started with 3Aru Labs?</summary>
+        <p class="mt-2 text-sm">Reach out to us through our contact form to schedule a consultation or onboarding session.</p>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<section class="bg-[#0A0B1B]/10 text-[#222] py-20 px-6">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-4xl font-extrabold text-center mb-12 text-[#301B94]">Roadmap Snapshot</h2>
+
+    <div class="space-y-10">
+      <!-- Phase 1 -->
+      <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-white/10">
+        <div class="flex items-start space-x-4">
+          <img src="https://cdn-icons-png.flaticon.com/512/1055/1055646.png" alt="Foundation & Branding Icon" class="w-12 h-12 shrink-0">
+          <div>
+            <h3 class="text-xl font-bold text-[#301B94]">Phase 1: Foundation & Branding</h3>
+            <p class="text-sm mt-1">Establishing online presence and partnerships.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 2 -->
+      <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-white/10">
+        <div class="flex items-start space-x-4">
+          <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="Securing Clients & Investors Icon" class="w-12 h-12 shrink-0">
+          <div>
+            <h3 class="text-xl font-bold text-[#301B94]">Phase 2: Securing Initial Clients & Investors</h3>
+            <p class="text-sm mt-1">Closing first OTC deals.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 3 -->
+      <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-white/10">
+        <div class="flex items-start space-x-4">
+          <img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png" alt="Expanding Services Icon" class="w-12 h-12 shrink-0">
+          <div>
+            <h3 class="text-xl font-bold text-[#301B94]">Phase 3: Expanding Services</h3>
+            <p class="text-sm mt-1">Launching market-making and community management.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 4 -->
+      <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-white/10">
+        <div class="flex items-start space-x-4">
+          <img src="https://cdn-icons-png.flaticon.com/512/484/484167.png" alt="Institutional & Global Expansion Icon" class="w-12 h-12 shrink-0">
+          <div>
+            <h3 class="text-xl font-bold text-[#301B94]">Phase 4: Institutional & Global Expansion</h3>
+            <p class="text-sm mt-1">Onboarding institutional investors and international clients.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 5 -->
+      <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-white/10">
+        <div class="flex items-start space-x-4">
+          <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Becoming an Industry Leader Icon" class="w-12 h-12 shrink-0">
+          <div>
+            <h3 class="text-xl font-bold text-[#301B94]">Phase 5: Becoming an Industry Leader</h3>
+            <p class="text-sm mt-1">Hosting high-profile investment events and solidifying brand authority.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="text-white py-12 px-6 bg-cover bg-center text-center md:text-left" style="background-image: url('images/PowerClip\ Rectangle.png'); background-attachment: fixed;">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 items-center md:items-start justify-center md:justify-start">
+    
+    <!-- Logo & Tagline -->
+    <div class="space-y-4 flex flex-col items-center md:items-start">
+      <img src="./images/Wide 01.png" alt="3Aru Labs Logo" class="w-32 mx-auto md:mx-0"> <!-- center logo on mobile -->
+      <p class="text-sm text-[#CCFF66]">Empowering crypto projects with investor access, exchange listings, and strategic growth.</p>
+      <div class="flex space-x-4 justify-center md:justify-start">
+        <!-- social links -->
+        <div class="flex space-x-4">
+          <a href="#" aria-label="X" class="text-[#ccffcc] hover:text-white transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M18.29 2H21l-6.97 8 8.23 12h-6.44L12.2 14.4 6.4 22H3l7.42-8.51L2.5 2h6.52l4.6 6.48L18.29 2z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Telegram" class="text-[#ccffcc] hover:text-white transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M21.05 2.65L2.71 9.58c-1.3.51-1.29 1.21-.24 1.53l4.74 1.48 1.76 5.53c.22.67.36.92.94.92.62 0 .85-.24 1.18-.53l2.82-2.71 5.87 4.32c1.08.6 1.85.29 2.13-1l3.48-16.39c.3-1.43-.52-2.06-1.64-1.56z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="LinkedIn" class="text-[#ccffcc] hover:text-white transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v14H0V8zm7.5 0H12v2.2c.63-1.19 2.02-2.2 4.25-2.2 4.53 0 5.25 2.98 5.25 6.84V22H17v-6.5c0-1.55-.03-3.55-2.25-3.55s-2.6 1.7-2.6 3.44V22H7.5V8z"/>
+            </svg>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="flex flex-col items-center md:items-start">
+      <h4 class="text-lg font-semibold mb-4 text-[#CCFF66]">Quick Links</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#services" class="hover:underline">Services</a></li>
+        <li><a href="#roadmap" class="hover:underline">Roadmap</a></li>
+        <li><a href="#faqs" class="hover:underline">FAQs</a></li>
+        <li><a href="#contact" class="hover:underline">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="flex flex-col items-center md:items-start">
+      <h4 class="text-lg font-semibold mb-4 text-[#CCFF66]">Get in Touch</h4>
+      <p >Have questions or want to collaborate?</p>
+      <p class="text-sm mt-2">Email: <a href="mailto:admin@3arulabs.com" class="text-[#CCFF66] underline">admin@3arulabs.com</a></p>
+      <p >Telegram: <a href="#" class="text-[#CCFF66] underline">@ThreeAruLabs</a></p>
+    </div>
+  </div>
+
+  <!-- Bottom Note -->
+  <div class="mt-10 text-center text-xs text-white/60">
+    &copy; 2025 3Aru Labs. All rights reserved.
+  </div>
+</footer>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
